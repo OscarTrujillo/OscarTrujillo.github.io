@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Óscar Trujillo Acosta-2016 -->
 <html lang="en">
 
 <head>
@@ -21,7 +22,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
-
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -45,25 +46,25 @@
                 <a href="#top" onclick = $("#menu-close").click(); >Home</a>
             </li>
             <li>
-                <a href="#about" onclick = $("#menu-close").click(); >Saber más</a>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
             </li>
             <li>
-                <a href="#sytw" onclick = $("#menu-close").click(); >Sistemas y Tecnologías Web</a>
+                <a href="#skills" onclick = $("#menu-close").click(); >Skills</a>
             </li>
             <li>
-                <a href="#seguridad" onclick = $("#menu-close").click(); >Seguridad</a>
+                <a href="#experience" onclick = $("#menu-close").click(); >Experience</a>
             </li>
             <li>
-                <a href="#lpp" onclick = $("#menu-close").click(); >LPP</a>
+                <a href="#studies" onclick = $("#menu-close").click(); >Studies</a>
             </li>
             <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contacto</a>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
             </li>
         </ul>
     </nav>
 
     <!-- Header -->
-    <header id="top" class="header">
+    <header id="top" class="header parallax">
         <div class="text-vertical-center">
             <h1>Welcome 2 Óscar</h1>
             <h3>Computer engineer</h3>
@@ -84,35 +85,99 @@
         </div>
     </section>
 
-    <section id="sytw" class="services bg-primary">
+    <section id="skills" class="services bg-primary">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-12 col-lg-offset-0" >
                     <h2>Skills</h2>
                     <hr class="small">
-                    <canvas id="myChart" height=80vh></canvas>
+                    <div class="col-xs-10 col-xs-offset-1">
+                      <canvas id="myChart" height=80vh></canvas>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="experience" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Experience</h2>
                     <hr class="small">
+                    <div class="col-xs-6 ">
+                      <h3>Professional</h3>
+                    </div>
+                    <div class="col-xs-3 col-xs-offset-3">
+                      <h3>Hobbies</h3>
+                    </div>
+                    <ul class="ch-grid">
+                      <div class="col-xs-6 panel panel-default">
+                        <li>
+                          <div class="ch-item">
+                            <a href="http://www.naxiu.es/" target="_blank">
+                            <div class="ch-info">
+                              <div class="ch-info-front">
+                                <img  src="img/naxiu.png" class="img-responsive img-circle vertical-align bg-primary" alt="logo">
+                              </div>
+                              <div class="ch-info-back">
+                                <h3>University practices</h3>
+                                <p>Django developer</p>
+                                <p>01/16-05/16</p>
+                              </div>
+                            </div>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="ch-item">
+                            <a href="https://www.facebook.com/guanxerach/?fref=ts" target="_blank">
+                            <div class="ch-info">
+                              <div class="ch-info-front">
+                                <img  src="img/naxiu.png" class="img-responsive img-circle vertical-align bg-primary" alt="logo">
+                              </div>
+                              <div class="ch-info-back">
+                                <h3>Intern</h3>
+                                <p>NodeJs developer</p>
+                                <p>06/16-12/16</p>
+                              </div>
+                            </div>
+                            </a>
+                          </div>
+                        </li>
+                      </div>
+                      <div class="col-xs-3 col-xs-offset-3 panel panel-default">
+                        <li>
+                          <div class="ch-item">
+                            <a href="https://www.facebook.com/guanxerach/?fref=ts" target="_blank">
+                              <div class="ch-info">
+                                <div class="ch-info-front ">
+                                  <img  src="img/scout.png" class="img-responsive img-circle vertical-align bg-primary" alt="logo">
+                                </div>
+                                <div class="ch-info-back">
+                                  <h3>Scout volunteer</h3>
+                                  <p>2013-now</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+                      </div>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="sytw" class="services bg-primary">
+    <section id="studies" class="services bg-primary">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2>Studies</h2>
                     <hr class="small">
+                    <div class="col-xs-8 col-xs-offset-2">
+                      <img  src="img/keep.png" alt="logo" class="img-responsive">
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,10 +197,10 @@
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="https://twitter.com/OscarTrucki"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="https://twitter.com/OscarTrucki" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="https://github.com/OscarTrujillo"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                            <a href="https://github.com/OscarTrujillo" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -224,7 +289,7 @@
           scales: {
             xAxes: [{
               stacking:true,
-              barPercentage: 0.3,
+              barPercentage: 0.2,
               ticks: {
                 // display: false
                 fontColor: "white",
